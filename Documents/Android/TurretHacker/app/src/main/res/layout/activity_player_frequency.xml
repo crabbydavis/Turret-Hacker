@@ -3,5 +3,107 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/title_size"
+        android:text="Select a Player Frequency"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_width="@dimen/player_frequency_button_size"
+            android:layout_height="@dimen/player_frequency_button_size"
+            android:text="Player 0"
+            android:textSize="@dimen/frequency_button_text_size"
+            android:id="@+id/player_frequency_button_0"/>
+        <Button
+            android:layout_width="@dimen/player_frequency_button_size"
+            android:layout_height="@dimen/player_frequency_button_size"
+            android:text="Player 1"
+            android:textSize="@dimen/frequency_button_text_size"
+            android:id="@+id/player_frequency_button_1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_width="@dimen/player_frequency_button_size"
+            android:layout_height="@dimen/player_frequency_button_size"
+            android:text="Player 2"
+            android:textSize="@dimen/frequency_button_text_size"
+            android:id="@+id/player_frequency_button_2"/>
+        <Button
+            android:layout_width="@dimen/player_frequency_button_size"
+            android:layout_height="@dimen/player_frequency_button_size"
+            android:text="Player 3"
+            android:textSize="@dimen/frequency_button_text_size"
+            android:id="@+id/player_frequency_button_3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_width="@dimen/player_frequency_button_size"
+            android:layout_height="@dimen/player_frequency_button_size"
+            android:text="Player 4"
+            android:textSize="@dimen/frequency_button_text_size"
+            android:id="@+id/player_frequency_button_4"/>
+        <Button
+            android:layout_width="@dimen/player_frequency_button_size"
+            android:layout_height="@dimen/player_frequency_button_size"
+            android:text="Player 5"
+            android:textSize="@dimen/frequency_button_text_size"
+            android:id="@+id/player_frequency_button_5"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_width="@dimen/player_frequency_button_size"
+            android:layout_height="@dimen/player_frequency_button_size"
+            android:text="Player 6"
+            android:textSize="@dimen/frequency_button_text_size"
+            android:id="@+id/player_frequency_button_6"/>
+        <Button
+            android:layout_width="@dimen/player_frequency_button_size"
+            android:layout_height="@dimen/player_frequency_button_size"
+            android:text="Player 7"
+            android:textSize="@dimen/frequency_button_text_size"
+            android:id="@+id/player_frequency_button_7"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_width="@dimen/player_frequency_button_size"
+            android:layout_height="@dimen/player_frequency_button_size"
+            android:text="Player 8"
+            android:textSize="@dimen/frequency_button_text_size"
+            android:id="@+id/player_frequency_button_8"/>
+        <Button
+            android:layout_width="@dimen/player_frequency_button_size"
+            android:layout_height="@dimen/player_frequency_button_size"
+            android:text="Player 9"
+            android:textSize="@dimen/frequency_button_text_size"
+            android:id="@+id/player_frequency_button_9"/>
+    </LinearLayout>
 
 </LinearLayout>
