@@ -40,18 +40,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SimonActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        jumptoFrequencyButton = (Button) findViewById(R.id.jump_to_frequency_button);
-        jumptoFrequencyButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, PlayerFrequencyActivity.class);
                 startActivityForResult(intent, 1);
             }
         });
+
+//        jumptoFrequencyButton = (Button) findViewById(R.id.jump_to_frequency_button);
+//        jumptoFrequencyButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this, PlayerFrequencyActivity.class);
+//                startActivityForResult(intent, 1);
+//            }
+//        });
     }
 
 

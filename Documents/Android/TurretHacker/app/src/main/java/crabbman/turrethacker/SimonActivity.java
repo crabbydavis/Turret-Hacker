@@ -7,12 +7,13 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Looper;
 import android.os.MessageQueue;
-import android.support.v7.app.AppCompatActivity;
+
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -76,7 +77,7 @@ public class SimonActivity extends Activity {
             @Override
             public void onClick(View view) {
                 if(checkSequence()){
-                    startActivity(new Intent(simonActivity, PlayerFrequencyActivity.class));
+                    startActivityForResult(new Intent(simonActivity, PlayerFrequencyActivity.class), 1);
                 }
                 else{
                     startActivity(new Intent(simonActivity, MainActivity.class));
@@ -104,6 +105,17 @@ public class SimonActivity extends Activity {
         }*/
         flashing();
         playGame();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data){
+        int result = data.getIntExtra("frequency", -1);
+        //Toast.makeText(this, "Intermediate result: " + result, Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        intent.putExtra("frequency",result);
+        setResult(1, intent);
+        finish();
     }
 
     private void flashing() {

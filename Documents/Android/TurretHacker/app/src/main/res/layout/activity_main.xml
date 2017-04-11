@@ -27,9 +27,9 @@
         android:id="@+id/start_button"
         android:text="Start!"
         android:textSize="@dimen/start_button_text_size"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/jump_to_frequency_button"
-        android:text="Player Frequency"/>
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/jump_to_frequency_button"-->
+        <!--android:text="Player Frequency"/>-->
 </LinearLayout>
