@@ -1,7 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent"
+              android:background="@color/black">
+    <Button android:id="@+id/smallYellowButton"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="100dp"
+            android:background="@color/yellow">
+    </Button>
+    <Button android:id="@+id/largeYellowButton"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="100dp"
+            android:visibility="invisible"
+            android:background="@color/yellow">
+    </Button>
+    <Button android:id="@+id/smallRedButton"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="320dp"
+            android:visibility="visible"
+            android:background="@color/red">
+    </Button>
+    <Button android:id="@+id/largeRedButton"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="320dp"
+            android:visibility="invisible"
+            android:background="@color/red">
+    </Button>
+    <Button android:id="@+id/smallBlueButton"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="460dp"
+            android:layout_marginLeft="80dp"
+            android:background="@color/blue">
+    </Button>
+    <Button android:id="@+id/largeBlueButton"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="460dp"
+            android:layout_marginLeft="40dp"
+            android:visibility="invisible"
+            android:background="@color/blue">
+    </Button>
+    <Button android:id="@+id/smallGreenButton"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="460dp"
+            android:layout_marginLeft="320dp"
+            android:background="@color/green">
+    </Button>
+    <Button android:id="@+id/largeGreenButton"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="460dp"
+            android:layout_marginLeft="320dp"
+            android:visibility="invisible"
+            android:background="@color/green">
+    </Button>
 
-</LinearLayout>
+    <Button android:id="@+id/startSequenceButton"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Submit Sequence"
+        android:textSize="20dp"
+        >
+    </Button>
+</RelativeLayout>
