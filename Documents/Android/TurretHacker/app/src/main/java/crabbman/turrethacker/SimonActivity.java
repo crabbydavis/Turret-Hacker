@@ -385,7 +385,7 @@ public class SimonActivity extends Activity {
         smallRedButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                buttonPushes.add(smallRedButton);
+                buttonPushes.add(largeRedButton);
                 largeRedButton.setVisibility(View.VISIBLE);
                 smallRedButton.setEnabled(false);
                 Timer buttonTimer = new Timer();
@@ -408,7 +408,7 @@ public class SimonActivity extends Activity {
         smallBlueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                buttonPushes.add(smallBlueButton);
+                buttonPushes.add(largeBlueButton);
                 largeBlueButton.setVisibility(View.VISIBLE);
                 smallBlueButton.setEnabled(false);
 
@@ -432,7 +432,7 @@ public class SimonActivity extends Activity {
         smallYellowButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                buttonPushes.add(smallYellowButton);
+                buttonPushes.add(largeYellowButton);
                 largeYellowButton.setVisibility(View.VISIBLE);
                 smallYellowButton.setEnabled(false);
 
@@ -456,7 +456,7 @@ public class SimonActivity extends Activity {
         smallGreenButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                buttonPushes.add(smallGreenButton);
+                buttonPushes.add(largeGreenButton);
                 largeGreenButton.setVisibility(View.VISIBLE);
                 smallGreenButton.setEnabled(false);
 
@@ -482,7 +482,7 @@ public class SimonActivity extends Activity {
     private boolean checkSequence() {
 
         for(int i = 0; i < sequenceLength; i++){
-            if(!sequence.get(i).equals(buttonPushes.get(i))){
+            if(!sequence.get(i).getText().equals(buttonPushes.get(i).getText())){
                 return false;
             }
         }

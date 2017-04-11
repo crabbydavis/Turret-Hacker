@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     android:id="@+id/activity_main"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,10 +9,27 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context="crabbman.turrethacker.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
-</RelativeLayout>
+        android:gravity="center"
+        android:text="To choose your frequency, you must first beat Simon!"
+        android:textSize="@dimen/title_size"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/start_button"
+        android:text="Start!"
+        android:textSize="@dimen/start_button_text_size"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/jump_to_frequency_button"
+        android:text="Player Frequency"/>
+</LinearLayout>
